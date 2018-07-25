@@ -38,7 +38,39 @@ const routers = [
       meta: {
         title: '测试列表'
       }
-    }
+    },
+    {
+      path: '/test',
+      name: 'test',
+      component: (resolve) => require(['../components/Test.vue'], resolve),
+      meta: {
+        title: '查看测试'
+      }
+    },
+    // {
+    //   path: '/admin',
+    //   name: 'admin',
+    //   component: (resolve) => require(['../components/Admin.vue'], resolve),
+    //   meta: {
+    //     title: '管理页面'
+    //   },
+    // },
+    // {
+    //   path: '/admin_test',
+    //   name: 'admin',
+    //   component: (resolve) => require(['../components/Admin_test.vue'], resolve),
+    //   meta: {
+    //     title: '试卷详情'
+    //   },
+    // },
+    // {
+    //   path: '/admin_testlist',
+    //   name: 'admin',
+    //   component: (resolve) => require(['../components/Admin_testlist.vue'], resolve),
+    //   meta: {
+    //     title: '管理试卷'
+    //   },
+    // }
   ];
   export default routers;
 
