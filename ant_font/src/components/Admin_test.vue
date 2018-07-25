@@ -13,6 +13,9 @@
                                     where are you from ?
                                 </p>
                             </span>
+                            <span class="modify">
+                                  <el-button type="danger" size="medium">修改</el-button>
+                            </span>
                         </div>
                         <div class="ex-answer">
                             <ul>
@@ -51,6 +54,9 @@
                                     where are you from ?
                                 </p>
                             </span>
+                            <span class="modify">
+                                  <el-button type="danger" size="medium">修改</el-button>
+                            </span>
                         </div>
                         <div class="ex-answer">
                             <ul>
@@ -87,6 +93,9 @@
                                 <p>
                                     where are you from ?
                                 </p>
+                            </span>
+                            <span class="modify">
+                                  <el-button type="danger" size="medium">修改</el-button>
                             </span>
                         </div>
                         <div class="ex-answer">
@@ -173,5 +182,8 @@ ul {
 }
 .ex-answer li input {
     margin-left: 9.5rem;
+}
+.modify > button {
+  padding: .5rem .5rem;
 }
 </style>
