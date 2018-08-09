@@ -4,13 +4,16 @@ import Vue from 'vue'
 import App from './App'
 import Routers from './router'
 import VueRouter from 'vue-router'
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
+import ElementUI from 'element-ui'
+import Vuex from 'vuex'
+import store from './vuex/store'
+import 'element-ui/lib/theme-chalk/index.css'
 import jujWid from './util/wid'
 
 Vue.use(VueRouter);
 Vue.use(ElementUI);
 Vue.use(jujWid);
+Vue.use(Vuex)
 const RouterConfig = {
     mode: 'history',
     routes: Routers
@@ -23,7 +26,8 @@ router.beforeEach((to,from,next) =>{
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  router: router,
+  router,
+  store,
   render: h => {
         return h(App)
     }

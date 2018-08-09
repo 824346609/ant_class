@@ -53,23 +53,28 @@ const routers = [
       component: (resolve) => require(['../components/Admin.vue'], resolve),
       meta: {
         title: '管理页面'
-      },
+      }
     },
     {
       path: '/admin_test',
-      name: 'admin',
+      name: 'admin_test',
       component: (resolve) => require(['../components/Admin_test.vue'], resolve),
       meta: {
         title: '试卷详情'
-      },
+      }
     },
     {
       path: '/admin_testlist',
-      name: 'admin',
+      name: 'testlist',
       component: (resolve) => require(['../components/Admin_testlist.vue'], resolve),
       meta: {
         title: '管理试卷'
-      },
+      }
+    },
+    {
+      path: '/show',
+      name: 'show',
+      component: (resolve) => require(['../components/show.vue'], resolve),
     }
   ];
   export default routers;
